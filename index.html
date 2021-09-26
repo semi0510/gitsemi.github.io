@@ -5,212 +5,348 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Semi's Portfolio</title>
-        <!-- Favicon-->
+        <title>Resume - Start Bootstrap Theme</title>
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
-        <!-- Third party plugin CSS-->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
     <body id="page-top">
         <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
-            <div class="container">
-                <a class="navbar-brand js-scroll-trigger" href="#page-top">Semi's PORTFOLIO</a><button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto my-2 my-lg-0">
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
-                    </ul>
-                </div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <span class="d-block d-lg-none">Semi Jang</span>
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/semi_profile.jpg" alt="..." /></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#others">Other Activities & Achievements</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+                </ul>
             </div>
         </nav>
-        <!-- Masthead-->
-        <header class="masthead">
-            <div class="container h-100">
-                <div class="row h-100 align-items-center justify-content-center text-center">
-                    <div class="col-lg-10 align-self-end">
-                        <h1 class="text-uppercase text-white font-weight-bold">2020 PORTFOLIO</h1>
-                        <h2 class="text-uppercase text-white font-weight-bold">SEMI JANG</h2>
-                        <hr class="divider my-4" />
-                    </div>
-                    <div class="col-lg-8 align-self-baseline">
-                        <p class="text-white-75 font-weight-light mb-5">장세미의 포트폴리오입니다</p>
-                        <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">FIND OUT MORE</a>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <!-- About-->
-        <section class="page-section bg-primary" id="about">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8 text-center">
-                        <h2 class="text-white mt-0">습득이 빠른 프론트엔드 신입 개발자</h2>
-                        <hr class="divider light my-4" />
-                        <h4 class="text-white-50 mb-4">ㅣExperienceㅣ</h4>
-                        <p class="text-white-50 mb-4">2018 2학기     한국대학생 IT& 경영학회 18 기</p>
-                        <p class="text-white-50 mb-4">2020.03.~06.   한국과학기술연구원(KIST) 계산과학연구센터 인턴</p>
-                        <p class="text-white-50 mb-4">2020.07.01 ~ Virtual Lab FE 개발자</p>
-                        <a class="btn btn-light btn-xl js-scroll-trigger" href="#skills" style="margin-top: 1.5rem;">Get Started!</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Skills-->
-        <section class="page-section" id="skills">
-            <div class="container">
-                <h2 class="text-center mt-0">Skills</h2>
-                <hr class="divider my-4" />
-                <div class="row">
-                    <div class="col-lg-3 col-md-6 text-center">
-                        <div class="mt-5">
-                            <img class="logo-img" src="assets/img/python-logo.png" alt="" />
-                            <h3 class="h4 mb-2" style="margin-top:30px;">PYTHON</h3>
+        <!-- Page Content-->
+        <div class="container-fluid p-0">
+            <!-- About-->
+            <section class="resume-section" id="about">
+                <div class="row" style="width:100%;">
+                    <div class="col-5">
+                        <div class="resume-section-content">
+                            <h1 class="mb-0">
+                                Semi
+                                <span class="text-primary">Jang</span>
+                            </h1>
+                            <div class="subheading mb-5"> +82 1068663406 ·
+                                <a href="mailto:sss_emi@naver.com">sss_emi@naver.com</a>
+                            </div>
+                            <p class="lead mb-5"><!-- about me --></p>
+                            <div class="social-icons">
+                                <a class="social-icon" href="https://www.instagram.com/sss_emi" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                <a class="social-icon" href="https://github.com/semi0510" target="_blank"><i class="fab fa-github"></i></a>
+                                <!--
+                                <a class="social-icon" href="#!"><i class="fab fa-twitter"></i></a>
+                                <a class="social-icon" href="#!"><i class="fab fa-facebook-f"></i></a>
+                                -->
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 text-center">
-                        <div class="mt-5">
-                            <img class="logo-img" src="assets/img/js-logo.png" alt="" />
-                            <h3 class="h4 mb-2" style="margin-top:30px;">JAVA SCRIPT</h3>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 text-center">
-                        <div class="mt-5">
-                            <img class="logo-img" src="assets/img/sql-logo.png" alt="" />
-                            <h3 class="h4 mb-2" style="margin-top:30px;">SQL</h3>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 text-center">
-                        <div class="mt-5">
-                            <img class="logo-img" src="assets/img/r-logo.png" alt="" />
-                            <h3 class="h4 mb-2" style="margin-top:30px;">R</h3>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 text-center">
-                        <div class="mt-5">
-                            <img class="logo-img" src="assets/img/html-logo.png" alt="" />
-                            <h3 class="h4 mb-2" style="margin-top:30px;">HTML</h3>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 text-center">
-                        <div class="mt-5">
-                            <img class="logo-img" src="assets/img/css-logo.png" alt="" />
-                            <h3 class="h4 mb-2" style="margin-top:30px;">CSS</h3>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 text-center">
-                        <div class="mt-5">
-                            <img class="logo-img" src="assets/img/sas-logo.png" alt="" />
-                            <h3 class="h4 mb-2" style="margin-top:30px;">SAS</h3>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 text-center">
-                        <div class="mt-5">
-                            <img class="logo-img" src="assets/img/mongodb-logo.png" alt="" />
-                            <h3 class="h4 mb-2" style="margin-top:30px;">MONGO DB</h3>
+                    <div class="col-7">
+                        <div class="resume-section-content">
+                            <h4 class="mt-3 mb-4">Education</h2>
+                            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                                <div class="flex-grow-1">
+                                    <h5 class="mb-0">동덕여자대학교, 서울</h5>
+                                    <div class="subheading mb-3">Bachelor of Science</div>
+                                    <div>정보통계학과 - 전공심화과정 이수</div>
+                                </div>
+                                <div class="flex-shrink-0"><span class="text-primary">Mar 2016 - Feb 2021</span></div>
+                            </div>
+                            <div class="d-flex flex-column flex-md-row justify-content-between">
+                                <div class="flex-grow-1">
+                                    <h5 class="mb-0">해성여자고등학교, 서울</h5>
+                                </div>
+                                <div class="flex-shrink-0"><span class="text-primary">Mar 2011 - Feb 2014</span></div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!-- Portfolio-->
-        <div id="portfolio">
-            <div class="container-fluid p-0">
-                <div class="row no-gutters">
-                    <div class="col-lg-6 col-sm-6">
-                        <a class="portfolio-box" style="width:100%; height:100%;" href="assets/img/s01.png"
-                            ><img class="img-fluid" style="width:100%; height:100%;" src="assets/img/qbaandi.png" alt="" />
-                            <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">프론트엔드 개발자</div>
-                                <div class="project-name">한국과학기술연구원</div>
-                                <div class="project-name">전산모사 웹플랫폼</div>
-                            </div></a
-                        >
+            </section>
+            <hr class="m-0" />
+            <!-- Experience-->
+            <section class="resume-section" id="experience">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Experience</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h5 class="mb-0">(주) 버추얼랩</h3>
+                            <div class="subheading mb-3">플랫폼 연구팀 <span class="mx-2">|</span> 프론트엔트 개발자 <span class="mx-2">|</span> 매니저</div>
+                            <div>
+                                <ul>
+                                    <li>프로젝트</li>
+                                    <ul>
+                                        <li class="mb-3">한국화학연구원(KRICT)의 6개의 데이터 플랫폼 개발 
+                                            <ul>
+                                                <li>Front-End ( Javascript )</li>
+                                                <li>Data Parser ( Python )</li>
+                                                <li>DB ( Maria DB, MongoDB )</li>
+                                                <li>Framework ( Laravel, Vue js )</li>    
+                                                <li>UI Framework ( Vuetify, Bootstrap )</li>    
+                                            </ul>
+                                        </li>
+                                        <li>정부기술과제 : 계산시뮬레이션 웹플랫폼 프론트엔드 개발</li>
+                                        <li>용역과제 : 한국과학기술연구원(KIST)의 소재용어표준관리 플랫폼 개발 책임 담당</li>
+                                        <li class="mb-3">버추얼랩 자사 서비스  
+                                            <ul>
+                                                <li>Materials Square - Front End </li>
+                                                <li>Materials Square Edu - Front End </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">Jul 2020 - Present</span></div>
                     </div>
-                    <div class="col-lg-6 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/s02.PNG"
-                            ><img class="img-fluid" style="width:100%;"  src="assets/img/wer.png" alt="" />
-                            <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">데이터분석/UIUX디자인</div>
-                                <div class="project-name">빅데이터 분석 아이디어 공모전</div>
-                            </div></a
-                        >
-                    </div>
-                    <div class="col-lg-6 col-sm-6">
-                        <a class="portfolio-box" style="width:100%; height:100%;" href="assets/img/s03.PNG"
-                            ><img class="img-fluid" style="width:100%; height:100%;" src="assets/img/kusitms.png" alt="" />
-                            <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">대외활동</div>
-                                <div class="project-name">한국대학생IT경영학회</div>
-                            </div></a
-                        >
-                    </div>
-                    <div class="col-lg-6 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/s04.PNG"
-                            ><img class="img-fluid" style="width:100%;" src="assets/img/peer.png" alt="" />
-                            <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">서비스기획</div>
-                                <div class="project-name">D-TECH 기술아이디어 공모전</div>
-                            </div></a
-                        >
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h5 class="mb-0">한국과학기술연구원 (KIST)</h3>
+                            <div class="subheading mb-3">계산과학연구센터 <span class="mx-2">|</span> 웹 개발자 <span class="mx-2">|</span> 학점교류인턴</div>
+                            <div>
+                                <ul>
+                                    <li>원자 및 양자점 계산 시뮬레이션을 위한 웹 플랫폼 
+                                        <ul>
+                                            <li>UI/UX Design</li>
+                                            <li>Front End 개발</li>
+                                        </ul>
+                                    <li>'Surface Auto Passivation' 모듈 개발 (Python)</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">Mar 2020 - Jun 2020</span></div>
                     </div>
                 </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Education
+            <section class="resume-section" id="education">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Education</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h5 class="mb-0">동덕여자대학교, 서울</h5>
+                            <div class="subheading mb-3">Bachelor of Science</div>
+                            <div>정보통계학과 - 전공심화과정 이수</div>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">Mar 2016 - Feb 2021</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="flex-grow-1">
+                            <h5 class="mb-0">해성여자고등학교, 서울</h5>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">Mar 2011 - Feb 2014</span></div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+        -->
+            <!-- Interests-->
+            <section class="resume-section" id="others">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Other Activities & Achievements</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1 others-card">
+                            <h5 class="mb-2">빅데이터 아이디어 공모전</h5>
+                            <div class="subheading mb-1">
+                                <ul>
+                                    <li><label class="subheading-title">참여 기간</label>2020.01</li>
+                                    <li><label class="subheading-title">역할</label>데이터 분석, 기획, 발표</li>
+                                    <li><label class="subheading-title">팀 인원</label>4명</li>
+                                    <li><label class="subheading-title">분석 기술 | 통계 프로그램</label>워드클라우드, 바이그램 | R</li>
+                                </ul>
+                            </div>
+                            <div class="row" style="padding: 10px 30px;">
+                                <div class="col-4"><img class="img-fluid mx-auto mb-2" src="assets/img/wer_01.jpg" alt="..." /></div>
+                                <div class="col-4"><img class="img-fluid mx-auto mb-2" src="assets/img/wer_02.jpg" alt="..." /></div>
+                                <div class="col-4"><img class="img-fluid mx-auto mb-2" src="assets/img/wer_04.jpg" alt="..." /></div>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1 others-card">
+                            <h5 class="mb-2">D-TECH 기술/디자인 공모전<label class="awards-label"><i class="fas fa-trophy text-warning mr-2"></i><label style="margin-left: 10px;">장려상 수상</label></label></h5>
+                            <div class="subheading mb-1">
+                                <ul>
+                                    <li><label class="subheading-title">참여 기간</label>2019.01 ~ 2019.02</li>
+                                    <li><label class="subheading-title">역할</label>기획, UI/UX 디자인</li>
+                                    <li><label class="subheading-title">팀 인원</label>4명</li>
+                                        
+                                </ul>
+                            </div>
+                            <div class="row" style="padding: 10px 30px;">
+                                <div class="col-4" style="text-align: center;"><img class="img-fluid mx-auto mb-2" style="max-width: 215px;" src="assets/img/peer_03.png" alt="..." /></div>
+                                <div class="col-4">
+                                    <img class="img-fluid mx-auto mb-2" src="assets/img/peer_01.jpg" alt="..." />
+                                </div>
+                                <div class="col-4">
+                                    <img class="img-fluid mx-auto mb-2" src="assets/img/peer_02.jpg" alt="..." />
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1 others-card">
+                            <h5 class="mb-2">한국 대학생 IT & 경영 학회</h5>
+                            <div class="subheading mb-1">
+                                <div class="row">
+                                    <div class="col-8">
+                                        <ul>
+                                            <li><label class="subheading-title">참여 기간</label>2018.09 ~ 2018.12</li>
+                                            <li><label class="subheading-title">학술제</label>팀 프로젝트 (앱 개발)</li>
+                                            <li><label class="subheading-title">기술 교육 세션</label>매주 토요일 세션 강의 참석</li>
+                                            <li><label class="subheading-title">스터디</label>
+                                                <ul style="display: inline-grid;">
+                                                    <li>머신러닝 스터디</li>
+                                                    <li>창업 스터디</li>
+                                                    <li>디자인 스터디</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-4">
+                                    <img class="img-fluid mx-auto mb-2" src="assets/img/ku_01.png" alt="..." />
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Skills-->
+            <section class="resume-section" id="skills">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Skills</h2>
+                    <div class="subheading mb-3">Programming Languages & Tools</div>
+                    <div>
+                            <ul class="list-inline dev-icons">
+                                <li class="list-inline-item">
+                                    <i class="fab fa-html5"></i><label class="icon-label">HTML5</label>
+                                </li>
+                                <li class="list-inline-item">
+                                    <i class="fab fa-css3-alt"></i><label class="icon-label">CSS3</label>
+                                </li>
+                                <li class="list-inline-item">
+                                    <i class="fab fa-js-square"></i><label class="icon-label">Javascript</label>
+                                </li>
+                                <li class="list-inline-item">
+                                    <i class="fab fa-vuejs"></i><label class="icon-label">Vue js</label>
+                                </li>
+                                <li class="list-inline-item">
+                                    <i class="fab fa-node-js"></i><label class="icon-label">Node js</label>
+                                </li>
+                                <li class="list-inline-item">
+                                    <i class="fab fa-python"></i><label class="icon-label">Python</label>
+                                </li>
+                                <li class="list-inline-item">
+                                    <i class="fab fa-php"></i><label class="icon-label">PHP</label>
+                                </li>
+                                <li class="list-inline-item">
+                                    <i class="fab fa-r-project"></i><label class="icon-label">R</label>
+                                </li>
+                                <li class="list-inline-item">
+                                    <label class="icon-label">SQL</label>
+                                </li>
+                                <li class="list-inline-item">
+                                    <label class="icon-label">SAS</label>
+                                </li>
+                            </ul>
+                    </div>
+                    <!--
+                    <div class="subheading mb-3">Workflow</div>
+                    <ul class="fa-ul mb-0">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Mobile-First, Responsive Design
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Cross Browser Testing & Debugging
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Cross Functional Teams
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Agile Development & Scrum
+                        </li>
+                    </ul>
+                    -->
+                </div>
+            </section>
+            <hr class="m-0" />
+            <div class="footer-wrapper">
+                <div class="footer-text">Thank You !</div>
+                <div class="footer-subtext"><a href="mailto:sss_emi@naver.com">sss_emi@naver.com</a></div>
             </div>
+            <!-- Awards
+            <section class="resume-section" id="awards">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Awards & Certifications</h2>
+                    <ul class="fa-ul mb-0">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            Google Analytics Certified Developer
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            Mobile Web Specialist - Google Certification
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            1
+                            <sup>st</sup>
+                            Place - University of Colorado Boulder - Emerging Tech Competition 2009
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            1
+                            <sup>st</sup>
+                            Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            2
+                            <sup>nd</sup>
+                            Place - University of Colorado Boulder - Emerging Tech Competition 2008
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            1
+                            <sup>st</sup>
+                            Place - James Buchanan High School - Hackathon 2006
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            3
+                            <sup>rd</sup>
+                            Place - James Buchanan High School - Hackathon 2005
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        -->
         </div>
-        <!-- Call to action-->
-        <section class="page-section bg-dark text-white">
-            <div class="container text-center">
-                
-            </div>
-        </section>
-        <!-- Contact-->
-        <section class="page-section" id="contact">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8 text-center">
-                        <h2 class="mt-0">CONTACT!</h2>
-                        <hr class="divider my-4" />
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-3 ml-auto text-center mb-5 mb-lg-0">
-                        <i class="far fa-user-circle fa-3x mb-3 text-muted"></i>
-                        <div>장세미 95.05.10</div>
-                    </div>
-                    <div class="col-lg-3 ml-auto text-center mb-5 mb-lg-0">
-                        <i class="fas fa-phone fa-3x mb-3 text-muted"></i>
-                        <div>+82 10-6866-3406</div>
-                    </div>
-                    <div class="col-lg-3 ml-auto text-center mb-5 mb-lg-0">
-                        <i class="fas fa-envelope fa-3x mb-3 text-muted"></i>
-                        <div>sss_emi@naver.com</div>
-                    </div>
-                    <div class="col-lg-3 ml-auto text-center mb-5 mb-lg-0">
-                        <i class="fab fa-instagram fa-3x mb-3 text-muted"></i>
-                        <div>@sss_emi</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Footer-->
-        <footer class="bg-light py-5">
-            <div class="container"><div class="small text-center text-muted">THANK YOU</div></div>
-        </footer>
         <!-- Bootstrap core JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
-        <!-- Third party plugin JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
     </body>
