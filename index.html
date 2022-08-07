@@ -15,18 +15,8 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
         <style>
-            body:before {
-                position: fixed;
-                z-index: 1;
-                top: 0;
-                display: block;
-                content: "";
-                width: 100%;
-                height: 10px;
-                background: linear-gradient(90deg,#ff4f36,#f7b640);
-            }
             section{
-                margin: 100px 0;
+                margin: 80px 0 90px;
             }
             .font-color{
                 color:#fb813b;
@@ -35,14 +25,55 @@
                 background: #f7b640;
             }
             @font-face {
-                font-family: 'GongGothicMedium';
-                src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicMedium.woff') format('woff');
-                font-weight: normal;
+                font-family: 'Pretendard-Light';
+                src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Light.woff') format('woff');
+                font-weight: 300;
+                font-style: normal;
+            }
+            @font-face {
+                font-family: 'Pretendard-Regular';
+                src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+                font-weight: 400;
+                font-style: normal;
+            }
+            @font-face {
+                font-family: 'Pretendard-SemiBold';
+                src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-SemiBold.woff') format('woff');
+                font-weight: 600;
+                font-style: normal;
+            }
+            
+            @font-face {
+                font-family: 'Pretendard-ExtraBold';
+                src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraBold.woff') format('woff');
+                font-weight: 800;
+                font-style: normal;
+            }
+            @font-face {
+                font-family: 'Pretendard-Black';
+                src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Black.woff') format('woff');
+                font-weight: 900;
                 font-style: normal;
             }
             section>p{
                 margin-top: 50px;
                 font-size: 20px;
+            }
+            .font-light{
+                font-family: 'Pretendard-Light';
+            }
+            .font-regular{
+                font-family: 'Pretendard-Regular';
+            }
+            .font-SemiBold{
+                font-family: 'Pretendard-SemiBold';
+            }
+            
+            .font-ExtraBold{
+                font-family: 'Pretendard-ExtraBold';
+            }
+            .font-Black{
+                font-family: 'Pretendard-Black';
             }
             .resume-profile{
                 position: absolute;
@@ -50,11 +81,12 @@
                 height: 200px;
                 border-radius: 70%;
                 overflow: hidden;
-                opacity: 0.85;
+                opacity: 0.9;
                 /* top: 0; */
                 margin-top: -100px;
                 margin-left: -50px;
                 z-index: -4;
+                display: none;
             }
             .line-color{
                 height: 7px;
@@ -65,10 +97,43 @@
                 border-radius: 10px;
                 margin: 30px 0 50px;
             }
+            .top-circle-01{
+                width: 375px;
+                height: 375px;
+                position: absolute;
+                top: -61px;
+                left: -50px;
+                background: linear-gradient(90deg,#ff4f36,#f7b640);
+                border-radius: 30%;
+                z-index: -2;
+                transform: rotate(45deg);
+                /* margin-left: -46px; */
+                opacity: 0.7;
+            }
+            .top-circle-02{
+                width: 140px;
+                height: 140px;
+                position: absolute;
+                top: 15px;
+                background: linear-gradient(90deg,#ff4f36,#f7b640);
+                border-radius: 30%;
+                z-index: -1;
+                margin-left: -25px;
+                /* opacity: 0.8; */
+                transform: rotate(20deg);   
+            }
+            .text-box{
+                margin: 15px 0;
+            }
+            .subtitle{
+                font-family: 'Pretendard-SemiBold';
+            }
         </style>
     </head>
     <body>
         <div class="container">
+            <div class="top-circle-01"></div>
+            <div class="top-circle-02"></div>
             <section id="resume-01">
                 <h1>
                     반갑습니다, <br>저는 장세미입니다<span class="font-color">.</span>
@@ -76,7 +141,7 @@
                         <img class="resume-profile" src="assets/img/semi_profile.jpg" alt="..." />
                     </span>
                 </h1>
-                <p>
+                <p class="font-regular">
                    2년차 프론트엔드 개발과 스타트업 개발자로서의 다양한 경험이 있으며, <br/>
                    데이터를 더 가치있게 만들어 사용자에게 효과적인 인사이트를 제공한 경험이 있습니다. <br/>
                    UI/UX를 고민하며, 사용자의 니즈를 충족시키는 개발을 하는 것을 좋아합니다.<br/>
@@ -84,30 +149,41 @@
                 </p>
             </section>
             <section id="resume-work-experience">
-                <h2>Work Experiences<span class="font-color">.</span></h2>
-                <div class="line-color"></div>
-                <div class="row">
-                    <div class="col-4">
+                <h2 class="subtitle">Work Experiences<span class="font-color">.</span></h2>
+                <div class="row pt-5 pb-0 experience-virtuallab">
+                    <div class="col-5">
                         <h3>(주) 버추얼랩<span class="font-color">.</span></h3>
+                        <div class="text-box font-regular">
+                            Frontend Developer
+                            <br/>
+                            2020.07.01 - 2022.03.31 (1년 9개월)
+                        </div>
                     </div>
-                    <div class="col-8">bb</div>
+                    <div class="col-7">bb</div>
+                </div>
+                <div class="row py-5 experience-virtuallab">
+                    <div class="col-5">
+                        <h3>한국과학기술연구원 (KIST)<span class="font-color">.</span></h3>
+                        <div class="text-box font-regular">
+                            Web Developer (Intern)
+                            <br/>
+                            2020.03.02 - 2020.06.30 (4개월)
+                        </div>
+                    </div>
+                    <div class="col-7">bb</div>
                 </div>
             </section>
             <section id="resume-stack">
-                <h2>Stacks<span class="font-color">.</span></h2>
-                <div class="line-color"></div>
+                <h2 class="subtitle">Stacks<span class="font-color">.</span></h2>
             </section>
             <section id="resume-project">
-                <h2>Projects<span class="font-color">.</span></h2>
-                <div class="line-color"></div>
+                <h2 class="subtitle">Projects<span class="font-color">.</span></h2>
             </section>
             <section id="resume-award">
-                <h2>Award<span class="font-color">.</span></h2>
-                <div class="line-color"></div>
+                <h2 class="subtitle">Award<span class="font-color">.</span></h2>
             </section>
             <section id="resume-others">
-                <h2>Other Activities<span class="font-color">.</span></h2>
-                <div class="line-color"></div>
+                <h2 class="subtitle">Other Activities<span class="font-color">.</span></h2>
             </section>
         </div>
         <!-- Page Content
