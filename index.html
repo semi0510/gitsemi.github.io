@@ -135,6 +135,20 @@
             .subtitle{
                 font-family: 'Pretendard-SemiBold';
             }
+            @media screen and (max-width: 768px) {
+                .iframe-sm{
+                    width: 340px;
+                }
+                .kusitms-poster{
+                    display:none;
+                }
+                section {
+                    margin: 60px 1.2rem;
+                }
+                h1, .h1 {
+                    font-size: 40px;
+                }
+            }
             /*형광펜 css*/
             .highlight{
                 background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #fcf3d9 50%);
@@ -159,15 +173,15 @@
             <section id="resume-work-experience">
                 <h2 class="subtitle">Work Experiences<span class="font-color">.</span></h2>
                 <div class="row pt-5 pb-0 experience-virtuallab">
-                    <div class="col-5">
+                    <div class="col-12 col-md-5">
                         <h3>(주) 버추얼랩<span class="font-color">.</span></h3>
-                        <div class="text-box font-regular">
+                        <div class="text-box font-regular mb-5">
                             Frontend Developer
                             <br/>
                             2020.07.01 - 2022.03.31 (1년 9개월)
                         </div>
                     </div>
-                    <div class="col-7">
+                    <div class="col-12 col-md-7">
                         <div class="font-light">
                             <h4>Matsq Edu 플랫폼<span class="font-color">.</span></h4>
                             <p>21.08.01 - 21.11.01</p>
@@ -236,15 +250,15 @@
                     </div>
                 </div>
                 <div class="row pt-5 experience-virtuallab">
-                    <div class="col-5">
+                    <div class="col-12 col-md-5">
                         <h3>한국과학기술연구원 (KIST)<span class="font-color">.</span></h3>
-                        <div class="text-box font-regular">
+                        <div class="text-box font-regular mb-5">
                             Web Developer (Intern)
                             <br/>
                             2020.03.02 - 2020.06.30 (4개월)
                         </div>
                     </div>
-                    <div class="col-7">
+                    <div class="col-12 col-md-7">
                         <div class="font-light">
                             <h4>원자 및 양자 시뮬레이션 웹 플랫폼<span class="font-color">.</span></h4>
                             <p>20.03.02 - 20.06.30</p>
@@ -266,7 +280,7 @@
             <section id="resume-stack">
                 <h2 class="subtitle">Stacks<span class="font-color">.</span></h2>
                 <div class="row py-3 mt-5 stack-frontend">
-                    <div class="col-3">
+                    <div class="col-6 col-md-3">
                         <h4>FrontEnd<span class="font-color">.</span></h3>
                         <div class="font-light mt-3">
                             <ul>
@@ -278,7 +292,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-6 col-md-3">
                         <h4>BackEnd<span class="font-color">.</span></h3>
                         <div class="font-light mt-3">
                             <ul>
@@ -288,7 +302,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-6 col-md-3">
                         <h4>Database<span class="font-color">.</span></h3>
                         <div class="font-light mt-3">
                             <ul>
@@ -298,7 +312,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-6 col-md-3">
                         <h4>Etc<span class="font-color">.</span></h3>
                         <div class="font-light mt-3">
                             <ul>
@@ -315,7 +329,7 @@
             <section id="resume-award">
                 <h2 class="subtitle">Award<span class="font-color">.</span></h2>
                 <div class="row pt-5 experience-virtuallab">
-                    <div class="col-5">
+                    <div class="col-12 col-md-5">
                         <h4>제 2회 D-Tech <br/>기술 디자인 공모전<span class="font-color">.</span></h4>
                         <div class="text-box font-regular">
                             장려상
@@ -326,7 +340,7 @@
                             <a href="https://www.d-techcampaign.com/single-post/2019/02/21/제2회-d-tech-공모전-스케치" target="_blank">관련 기사</a>
                         </div>
                     </div>
-                    <div class="col-7">
+                    <div class="col-12 col-md-7">
                         <div class="font-light">
                             <h6>장애 학우를 위한 재능 공유 서비스</h6>
                             <ul>
@@ -336,7 +350,7 @@
                             <h6 class="mt-3">담당 역할</h6>
                             <p>기획 및 [프로토 타입] 앱 개발 및 기획</p>
                             <h6 class="mt-3">발표 자료</h6>
-                            <iframe src="assets/pdf/Peer.pdf" width="420" height="250"></iframe>
+                            <iframe class="iframe-sm" src="assets/pdf/Peer.pdf" width="420" height="250"></iframe>
                             <h6 class="mt-3">결과 및 성과</h6>
                             <p>기획과 비지니스 모델, 프로토 타입 개발 부분인 Track1 부문에서 수상</p>
                         </div>
@@ -347,28 +361,28 @@
             <section id="resume-others">
                 <h2 class="subtitle">Other Experiences<span class="font-color">.</span></h2>
                 <div class="row py-5 experience-virtuallab">
-                    <div class="col-5">
+                    <div class="col-12 col-md-5">
                         <h4>빅데이터 분석 아이디어 공모전<br/>(교내 공모전)<span class="font-color">.</span></h4>
                         <div class="text-box font-regular">
                             20.02
                         </div>
                     </div>
-                    <div class="col-7">
+                    <div class="col-12 col-md-7">
                         <div class="font-light">
                             <p>구글 플레이의 국내 전기 킥보드어플리케이션에 대한 리뷰를 크롤링하여 단점을 추출하고 이에 대한 새로운 아이디어 기획 </p>
                         </div>
                         <h6 class="mt-3">발표 자료</h6>
-                        <iframe src="assets/pdf/We R.pdf" width="420" height="250"></iframe>
+                        <iframe class="iframe-sm" src="assets/pdf/We R.pdf" width="420" height="250"></iframe>
                     </div>
                 </div>
                 <div class="row py-5 experience-virtuallab">
-                    <div class="col-5">
+                    <div class="col-12 col-md-5">
                         <h4>KUSITMS<br>(한국 대학생 IT 경영 학회)<span class="font-color">.</span></h4>
                         <div class="text-box font-regular">
                             18.08.21 - 18.12.28
                         </div>
                     </div>
-                    <div class="col-7">
+                    <div class="col-12 col-md-7">
                         <img class="kusitms-poster" src="img/kusitms-img.png" alt="..." />
                         <div class="font-light">
                             <h6>팀 프로젝트 - 학술제 : 기획 / 웹프론트엔드 개발 담당</h6>
@@ -387,14 +401,14 @@
                     </div>
                 </div>
                 <div class="row pt-5 experience-virtuallab">
-                    <div class="col-5">
+                    <div class="col-12 col-md-5">
                         <h4>동덕여자대학교<span class="font-color">.</span></h4>
                         <h6>정보통계학과</h6>
                         <div class="text-box font-regular">
                             16.03 - 21.02 (졸업)
                         </div>
                     </div>
-                    <div class="col-7">
+                    <div class="col-12 col-md-7">
                         <div class="font-light">
                             <p>동덕여자대학교에서 정보통계학과를 전공하며, 웹 프로그래밍, 컴퓨터네트워크, 데이터마이닝 등의 과목을 수강하였습니다.</p>
                         </div>
@@ -405,13 +419,13 @@
             <section id="contact">
                 <h2 class="subtitle">Contact & Channels<span class="font-color">.</span></h2>
                 <div class="row py-5 experience-virtuallab">
-                    <div class="col-6">
+                    <div class="col-12 col-md-6">
                         <h4>Email<span class="font-color">.</span></h4>
                         <div class="text-box font-regular">
                             <a href="mailto:sss_emi@naver.com" target="_blank">sss_emi@naver.com</a>
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-12 col-md-6">
                         <h4>Blog<span class="font-color">.</span></h4>
                         <div class="text-box font-regular">
                             <a href="https://only-semi.tistory.com/" target="_blank">https://only-semi.tistory.com/</a>
