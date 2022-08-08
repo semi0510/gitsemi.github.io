@@ -6,7 +6,7 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>Resume - Semi Jang</title>
-        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="img/new-favicon.png" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
@@ -16,7 +16,7 @@
         <link href="css/styles.css" rel="stylesheet" />
         <style>
             section{
-                margin: 80px 0 90px;
+                margin: 80px 0;
             }
             .font-color{
                 color:#fb813b;
@@ -97,6 +97,13 @@
                 border-radius: 10px;
                 margin: 30px 0 50px;
             }
+            .kusitms-poster{
+                width: 180px;
+                z-index: -1;
+                position: absolute;
+                opacity: 0.6;
+                margin-left: 350px;
+            }
             .top-circle-01{
                 width: 375px;
                 height: 375px;
@@ -128,6 +135,10 @@
             .subtitle{
                 font-family: 'Pretendard-SemiBold';
             }
+            /*형광펜 css*/
+            .highlight{
+                background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #fcf3d9 50%);
+            }
         </style>
     </head>
     <body>
@@ -141,11 +152,11 @@
                         <img class="resume-profile" src="assets/img/semi_profile.jpg" alt="..." />
                     </span>
                 </h1>
-                <p class="font-regular">
+                <p class="font-regular resume-profile-text">
                    2년차 프론트엔드 개발과 스타트업 개발자로서의 다양한 경험이 있으며, <br/>
-                   데이터를 더 가치있게 만들어 사용자에게 효과적인 인사이트를 제공한 경험이 있습니다. <br/>
-                   UI/UX를 고민하며, 사용자의 니즈를 충족시키는 개발을 하는 것을 좋아합니다.<br/>
-                   심플하고 아름다운 인터페이스를 구현하는 것을 좋아합니다. 
+                   데이터를 더 가치있게 만들어 <span class="highlight">사용자에게 효과적인 인사이트를 제공한 경험</span>이 있습니다. <br/>
+                   UI/UX를 고민하며, <span class="highlight">사용자의 니즈를 충족시키는 개발</span>을 하는 것을 좋아합니다.<br/>
+                   <span class="highlight">심플하고 아름다운 인터페이스를 구현</span>하는 것을 좋아합니다. 
                 </p>
             </section>
             <section id="resume-work-experience">
@@ -159,9 +170,75 @@
                             2020.07.01 - 2022.03.31 (1년 9개월)
                         </div>
                     </div>
-                    <div class="col-7">bb</div>
+                    <div class="col-7">
+                        <div class="font-light">
+                            <h4>Matsq Edu 플랫폼<span class="font-color">.</span></h4>
+                            <p>21.08.01 - 21.11.01</p>
+                            <p>소재 시뮬레이션 연구에 관심을 가지고 있는 전문가, 학생, 연구원 분들이 <span class="highlight">웹에서 쉽게 이론과 실습을 배울 수 있게 강의 및 실습환경을 제공</span>하는 교육 플랫폼 프로젝트 </p>
+                            <h6 class="mt-3">기여한 점</h6>
+                            <ul>
+                                <li>전체 UI 퍼블리싱 담당</li>
+                                <li>쿠키 팝업, Webinar 팝업, Modal 컴포넌트 구현 (Javascript, Vue.js)</li>
+                                <li>프론트 페이지, 교육 강의 이벤트, Quiz 성공 실패 페이지 UI 개발 </li>
+                                <li>네비게이션 및 Footer 반응형 제작</li>
+                                <li>php 파일 -> Vue 파일로 변경</li>
+                            </ul>
+                            <h6 class="mt-3">사용한 기술 스택 및 지식</h6>
+                            <p>Vue.js, Laravel, CSS, HTML</p>
+                            <h6 class="mt-3">결과 및 성과</h6>
+                            <p><a href="https://edu.materialssquare.com/" target="_blank">https://edu.materialssquare.com/</a></p>
+                        </div>
+                        <div class="font-light mt-5">
+                            <h4>데이터 플랫폼 프로젝트<span class="font-color">.</span></h4>
+                            <p>20.07.01 - 21.08.01 / 한국화학연구원(KRICT) 용역과제</p>
+                            <p><span class="highlight">6개의 연구 데이터 플랫폼 프로젝트</span>로 연구자들이 실험한 데이터를 CRUD하고, <span class="highlight">데이터 시각화를 통해 데이터 분석</span>할 수 있는 데이터 플랫폼 프로젝트를 실시함. </p>
+                            <h6 class="mt-3">기여한 점</h6>
+                            <ul>
+                                <li>프론트/백엔드 기술환경 세팅</li>
+                                <li>Laravel 프레임워크를 사용하여 웹페이지 구축</li>
+                                <li>UI 퍼블리싱 담당</li>
+                                <li>데이터 Parser 구현, 서버와 데이터 연결, 데이터를 시각화(Plotly.js) 기능 구현</li>
+                                <li>CRUD 기능 구현 (MongoDB, MariaDB 사용)</li>
+                            </ul>
+                            <h6 class="mt-3">사용한 기술 스택 및 지식</h6>
+                            <p>Vue.js, Vuetify, Laravel, PHP, Python, Ajax, fetchAPI, CSS, HTML, MongoDB, MariaDB, Vuex (일부 플랫폼)</p>
+                            <h6 class="mt-3">결과 및 성과</h6>
+                            <ul>
+                                <li><a href="https://texplorer.org/" target="_blank">https://texplorer.org/</a> (6개의 플랫폼 중 열전 플랫폼)</li>
+                                <li><a href="https://www.chemdx.org/" target="_blank">https://www.chemdx.org/</a> (전체 플랫폼 모음 홈페이지)</li>
+                            </ul>
+                        </div>
+                        <div class="font-light mt-5">
+                            <h4>소재 데이터 어휘 플랫폼<span class="font-color">.</span></h4>
+                            <p>21.08.01 - 21.11.01 / 한국과학기술연구원(KIST) 용역과제</p>
+                            <p>소재 관련 연구자들의 <span class="highlight">인공지능 연구를 위하여 소재 데이터를 표준화 시키는 것</span>을 목표로 진행. 소재 어휘 사전을 정의하고 소재 데이터를 관리 할 수 있는 소재 어휘 플랫폼 구현.</p>
+                            <h6 class="mt-3">기여한 점</h6>
+                            <ul>
+                                <li>프론트 / 백엔드 기술환경 세팅</li>
+                                <li>웹페이지 구축</li>
+                                <li>소재 데이터 표준화 parser 기능 구현</li>
+                                <li>데이터 CRUD 기능 구현</li>
+                                <li>데이터 Template - Input UI 함수 구현</li>
+                                <li>사용자 그룹 별 권한 기능 및 정책 페이지 구현</li>
+                            </ul>
+                            <h6 class="mt-3">사용한 기술 스택 및 지식</h6>
+                            <p>Vue.js, Vuetify, Laravel, PHP, Python, Ajax, CSS, HTML, MariaDB</p>
+                        </div>
+                        <div class="font-light mt-5 mb-5">
+                            <h4>화합물은행 홈페이지 리뉴얼<span class="font-color">.</span></h4>
+                            <p>21.10.25 - 21.12.10 / 한국화학연구원(KRICT) 용역과제</p>
+                            <p>워드프레스를 사용하여 <span class="highlight">내용의 가독성 및 사용자의 편리를 위한</span> 홈페이지 리뉴얼 프로젝트를 실시</label>
+                            <h6 class="mt-3">기여한 점</h6>
+                            <ul>
+                                <li>워드프레스 전체 페이지 구현(워드프레스의 플러그인을 사용하여 퍼블리싱 위주로 개발)</li>
+                                <li>플러그인 - SEO, 구글애널리틱스 적용</li>
+                            </ul>
+                            <h6 class="mt-3">결과 및 성과</h6>
+                            <p><a href="https://chembank.org/" target="_blank">https://chembank.org/</a></p>
+                        </div>
+                    </div>
                 </div>
-                <div class="row py-5 experience-virtuallab">
+                <div class="row pt-5 experience-virtuallab">
                     <div class="col-5">
                         <h3>한국과학기술연구원 (KIST)<span class="font-color">.</span></h3>
                         <div class="text-box font-regular">
@@ -170,239 +247,182 @@
                             2020.03.02 - 2020.06.30 (4개월)
                         </div>
                     </div>
-                    <div class="col-7">bb</div>
+                    <div class="col-7">
+                        <div class="font-light">
+                            <h4>원자 및 양자 시뮬레이션 웹 플랫폼<span class="font-color">.</span></h4>
+                            <p>20.03.02 - 20.06.30</p>
+                            <p>qCat은 촉매의 원자론적 및 양자 시뮬레이션 계산을 웹상에서 할 수 있도록 기능을 제공하는 웹플랫폼이다.</p>
+                            <h6 class="mt-3">기여한 점</h6>
+                            <ul>
+                                <li>계산 시뮬레이션 프론트엔드 구현</li>
+                                <li>원자의 표면 안정화 하는 기능 "Surface passivation 모듈" 구현</li>
+                            </ul>
+                            <h6 class="mt-3">사용한 기술 스택 및 지식</h6>
+                            <p>Javascript, CSS, HTML,Python</p>
+                            <h6 class="mt-3">결과 및 성과</h6>
+                            <p class="mb-0"><a href="https://qcat.vfab.org/" target="_blank">https://qcat.vfab.org/</a></p>
+                        </div>
+                    </div>
                 </div>
             </section>
+                <hr/>
             <section id="resume-stack">
                 <h2 class="subtitle">Stacks<span class="font-color">.</span></h2>
+                <div class="row py-3 mt-5 stack-frontend">
+                    <div class="col-3">
+                        <h4>FrontEnd<span class="font-color">.</span></h3>
+                        <div class="font-light mt-3">
+                            <ul>
+                                <li>HTML / CSS</li>
+                                <li>Javascript</li>
+                                <li>jQuery</li>
+                                <li>Vue.js</li>
+                                <li>Webpack / Babel</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <h4>BackEnd<span class="font-color">.</span></h3>
+                        <div class="font-light mt-3">
+                            <ul>
+                                <li>Node.js</li>
+                                <li>Laravel (PHP)</li>
+                                <li>Python</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <h4>Database<span class="font-color">.</span></h3>
+                        <div class="font-light mt-3">
+                            <ul>
+                                <li>MongoDB</li>
+                                <li>MySQL</li>
+                                <li>MariaDB</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <h4>Etc<span class="font-color">.</span></h3>
+                        <div class="font-light mt-3">
+                            <ul>
+                                <li>Git, Github, GitLab</li>
+                                <li>VSCode, Vim</li>
+                                <li>Figma, XD</li>
+                                <li>Slack, Swit, Jandi</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </section>
-            <section id="resume-project">
-                <h2 class="subtitle">Projects<span class="font-color">.</span></h2>
-            </section>
+                <hr/>
             <section id="resume-award">
                 <h2 class="subtitle">Award<span class="font-color">.</span></h2>
-            </section>
-            <section id="resume-others">
-                <h2 class="subtitle">Other Activities<span class="font-color">.</span></h2>
-            </section>
-        </div>
-        <!-- Page Content
-        <div class="container-fluid p-0">
-            <section class="resume-section" id="about">
-                <div class="row" style="width:100%;">
+                <div class="row pt-5 experience-virtuallab">
                     <div class="col-5">
-                        <div class="resume-section-content">
-                            <h1 class="mb-0">
-                                Semi
-                                <span class="text-primary">Jang</span>
-                            </h1>
-                            <div class="subheading mb-5"> +82 1068663406 ·
-                                <a href="mailto:sss_emi@naver.com">sss_emi@naver.com</a>
-                            </div>
-                            <p class="lead mb-5"></p>
-                            <div class="social-icons">
-                                <a class="social-icon" href="https://www.instagram.com/sss_emi" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                                <a class="social-icon" href="https://github.com/semi0510" target="_blank"><i class="fab fa-github"></i></a>
-
-                            </div>
+                        <h4>제 2회 D-Tech <br/>기술 디자인 공모전<span class="font-color">.</span></h4>
+                        <div class="text-box font-regular">
+                            장려상
+                            <br/>
+                            19.01 - 19.02
+                        </div>
+                        <div class="text-box font-regular">
+                            <a href="https://www.d-techcampaign.com/single-post/2019/02/21/제2회-d-tech-공모전-스케치" target="_blank">관련 기사</a>
                         </div>
                     </div>
                     <div class="col-7">
-                        <div class="resume-section-content">
-                            <h4 class="mt-3 mb-4">Education</h2>
-                            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                                <div class="flex-grow-1">
-                                    <h5 class="mb-0">동덕여자대학교, 서울</h5>
-                                    <div class="subheading mb-3">Bachelor of Science</div>
-                                    <div>정보통계학과 - 전공심화과정 이수</div>
-                                </div>
-                                <div class="flex-shrink-0"><span class="text-primary">Mar 2016 - Feb 2021</span></div>
-                            </div>
-                            <div class="d-flex flex-column flex-md-row justify-content-between">
-                                <div class="flex-grow-1">
-                                    <h5 class="mb-0">해성여자고등학교, 서울</h5>
-                                </div>
-                                <div class="flex-shrink-0"><span class="text-primary">Mar 2011 - Feb 2014</span></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <section class="resume-section" id="experience">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Experience</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h5 class="mb-0">(주) 버추얼랩</h3>
-                            <div class="subheading mb-3">플랫폼 연구팀 <span class="mx-2">|</span> 프론트엔트 개발자 <span class="mx-2">|</span> 매니저</div>
-                            <div>
-                                <ul>
-                                    <li>프로젝트</li>
-                                    <ul>
-                                        <li class="mb-3">한국화학연구원(KRICT)의 6개의 데이터 플랫폼 개발 
-                                            <ul>
-                                                <li>Front-End ( Javascript )</li>
-                                                <li>Data Parser ( Python )</li>
-                                                <li>DB ( Maria DB, MongoDB )</li>
-                                                <li>Framework ( Laravel, Vue js )</li>    
-                                                <li>UI Framework ( Vuetify, Bootstrap )</li>    
-                                            </ul>
-                                        </li>
-                                        <li>정부기술과제 : 계산시뮬레이션 웹플랫폼 프론트엔드 개발</li>
-                                        <li>용역과제 : 한국과학기술연구원(KIST)의 소재용어표준관리 플랫폼 개발 책임 담당</li>
-                                        <li class="mb-3">버추얼랩 자사 서비스  
-                                            <ul>
-                                                <li>Materials Square - Front End </li>
-                                                <li>Materials Square Edu - Front End </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">Jul 2020 - Present</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h5 class="mb-0">한국과학기술연구원 (KIST)</h3>
-                            <div class="subheading mb-3">계산과학연구센터 <span class="mx-2">|</span> 웹 개발자 <span class="mx-2">|</span> 학점교류인턴</div>
-                            <div>
-                                <ul>
-                                    <li>원자 및 양자점 계산 시뮬레이션을 위한 웹 플랫폼 
-                                        <ul>
-                                            <li>UI/UX Design</li>
-                                            <li>Front End 개발</li>
-                                        </ul>
-                                    <li>'Surface Auto Passivation' 모듈 개발 (Python)</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">Mar 2020 - Jun 2020</span></div>
-                    </div>
-                </div>
-            </section>
-            <hr class="m-0" />
-            
-            <section class="resume-section" id="others">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Other Activities & Achievements</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1 others-card">
-                            <h5 class="mb-2">빅데이터 아이디어 공모전</h5>
-                            <div class="subheading mb-1">
-                                <ul>
-                                    <li><label class="subheading-title">참여 기간</label>2020.01</li>
-                                    <li><label class="subheading-title">역할</label>데이터 분석, 기획, 발표</li>
-                                    <li><label class="subheading-title">팀 인원</label>4명</li>
-                                    <li><label class="subheading-title">분석 기술 | 통계 프로그램</label>워드클라우드, 바이그램 | R</li>
-                                </ul>
-                            </div>
-                            <div class="row" style="padding: 10px 30px;">
-                                <div class="col-4"><img class="img-fluid mx-auto mb-2" src="assets/img/wer_01.jpg" alt="..." /></div>
-                                <div class="col-4"><img class="img-fluid mx-auto mb-2" src="assets/img/wer_02.jpg" alt="..." /></div>
-                                <div class="col-4"><img class="img-fluid mx-auto mb-2" src="assets/img/wer_04.jpg" alt="..." /></div>
-                            </div>
-                        </div>
-                    </div> 
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1 others-card">
-                            <h5 class="mb-2">D-TECH 기술/디자인 공모전<label class="awards-label"><i class="fas fa-trophy text-warning mr-2"></i><label style="margin-left: 10px;">장려상 수상</label></label></h5>
-                            <div class="subheading mb-1">
-                                <ul>
-                                    <li><label class="subheading-title">참여 기간</label>2019.01 ~ 2019.02</li>
-                                    <li><label class="subheading-title">역할</label>기획, UI/UX 디자인</li>
-                                    <li><label class="subheading-title">팀 인원</label>4명</li>
-                                        
-                                </ul>
-                            </div>
-                            <div class="row" style="padding: 10px 30px;">
-                                <div class="col-4" style="text-align: center;"><img class="img-fluid mx-auto mb-2" style="max-width: 215px;" src="assets/img/peer_03.png" alt="..." /></div>
-                                <div class="col-4">
-                                    <img class="img-fluid mx-auto mb-2" src="assets/img/peer_01.jpg" alt="..." />
-                                </div>
-                                <div class="col-4">
-                                    <img class="img-fluid mx-auto mb-2" src="assets/img/peer_02.jpg" alt="..." />
-                                </div>
-                            </div>
-                        </div>
-                    </div>  
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1 others-card">
-                            <h5 class="mb-2">한국 대학생 IT & 경영 학회</h5>
-                            <div class="subheading mb-1">
-                                <div class="row">
-                                    <div class="col-8">
-                                        <ul>
-                                            <li><label class="subheading-title">참여 기간</label>2018.09 ~ 2018.12</li>
-                                            <li><label class="subheading-title">학술제</label>팀 프로젝트 (앱 개발)</li>
-                                            <li><label class="subheading-title">기술 교육 세션</label>매주 토요일 세션 강의 참석</li>
-                                            <li><label class="subheading-title">스터디</label>
-                                                <ul style="display: inline-grid;">
-                                                    <li>머신러닝 스터디</li>
-                                                    <li>창업 스터디</li>
-                                                    <li>디자인 스터디</li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-4">
-                                    <img class="img-fluid mx-auto mb-2" src="assets/img/ku_01.png" alt="..." />
-                                    </div>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>    
-                </div>
-            </section>
-            <hr class="m-0" />
-            <section class="resume-section" id="skills">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Skills</h2>
-                    <div class="subheading mb-3">Programming Languages & Tools</div>
-                    <div>
-                            <ul class="list-inline dev-icons">
-                                <li class="list-inline-item">
-                                    <i class="fab fa-html5"></i><label class="icon-label">HTML5</label>
-                                </li>
-                                <li class="list-inline-item">
-                                    <i class="fab fa-css3-alt"></i><label class="icon-label">CSS3</label>
-                                </li>
-                                <li class="list-inline-item">
-                                    <i class="fab fa-js-square"></i><label class="icon-label">Javascript</label>
-                                </li>
-                                <li class="list-inline-item">
-                                    <i class="fab fa-vuejs"></i><label class="icon-label">Vue js</label>
-                                </li>
-                                <li class="list-inline-item">
-                                    <i class="fab fa-node-js"></i><label class="icon-label">Node js</label>
-                                </li>
-                                <li class="list-inline-item">
-                                    <i class="fab fa-python"></i><label class="icon-label">Python</label>
-                                </li>
-                                <li class="list-inline-item">
-                                    <i class="fab fa-php"></i><label class="icon-label">PHP</label>
-                                </li>
-                                <li class="list-inline-item">
-                                    <i class="fab fa-r-project"></i><label class="icon-label">R</label>
-                                </li>
-                                <li class="list-inline-item">
-                                    <label class="icon-label">SQL</label>
-                                </li>
-                                <li class="list-inline-item">
-                                    <label class="icon-label">SAS</label>
-                                </li>
+                        <div class="font-light">
+                            <h6>장애 학우를 위한 재능 공유 서비스</h6>
+                            <ul>
+                                <li>장애 학우에게 다양한 교육 프로그램을 제공하여 다양한 분야를 배울 수 있는 기회 제공</li>
+                                <li>대학생들은 자신 있는 분야의 재능을 제공하고 봉사 시간 및 장학금을 지급</li>
                             </ul>
+                            <h6 class="mt-3">담당 역할</h6>
+                            <p>기획 및 [프로토 타입] 앱 개발 및 기획</p>
+                            <h6 class="mt-3">발표 자료</h6>
+                            <iframe src="assets/pdf/Peer.pdf" width="420" height="250"></iframe>
+                            <h6 class="mt-3">결과 및 성과</h6>
+                            <p>기획과 비지니스 모델, 프로토 타입 개발 부분인 Track1 부문에서 수상</p>
+                        </div>
                     </div>
                 </div>
             </section>
-            <hr class="m-0" />
-            <div class="footer-wrapper">
-                <div class="footer-text">Thank You !</div>
-                <div class="footer-subtext"><a href="mailto:sss_emi@naver.com">sss_emi@naver.com</a></div>
-            </div>
-        </div> -->
+                <hr/>
+            <section id="resume-others">
+                <h2 class="subtitle">Other Experiences<span class="font-color">.</span></h2>
+                <div class="row py-5 experience-virtuallab">
+                    <div class="col-5">
+                        <h4>빅데이터 분석 아이디어 공모전<br/>(교내 공모전)<span class="font-color">.</span></h4>
+                        <div class="text-box font-regular">
+                            20.02
+                        </div>
+                    </div>
+                    <div class="col-7">
+                        <div class="font-light">
+                            <p>구글 플레이의 국내 전기 킥보드어플리케이션에 대한 리뷰를 크롤링하여 단점을 추출하고 이에 대한 새로운 아이디어 기획 </p>
+                        </div>
+                        <h6 class="mt-3">발표 자료</h6>
+                        <iframe src="assets/pdf/We R.pdf" width="420" height="250"></iframe>
+                    </div>
+                </div>
+                <div class="row py-5 experience-virtuallab">
+                    <div class="col-5">
+                        <h4>KUSITMS<br>(한국 대학생 IT 경영 학회)<span class="font-color">.</span></h4>
+                        <div class="text-box font-regular">
+                            18.08.21 - 18.12.28
+                        </div>
+                    </div>
+                    <div class="col-7">
+                        <img class="kusitms-poster" src="img/kusitms-img.png" alt="..." />
+                        <div class="font-light">
+                            <h6>팀 프로젝트 - 학술제 : 기획 / 웹프론트엔드 개발 담당</h6>
+                            <ul>
+                                <li>과제 1. 대학생을 위한 어플리케이션 기획</li>
+                                <li>과제 2. 기술을 사용한 어플리케이션 프로토타입 개발</li>
+                            </ul>
+                            <h6 class="mt-4">매주 진행하는 세미나를 통해 IT와 경영을 함께 배우는 학회</h6>
+                            <ul>
+                                <li>서울 경기권 대학교들의 연합동아리</li>
+                                <li>매주 토요일 마다 진행하는 기술 세션에 참가</li>
+                                <li>팀을 구성하여 비니지스 모델부터 프로토 타입 개발까지 진행하여 학술제를 통해 시연 및 발표를 진행</li>
+                                <li>매 기수마다 직접 연사님들을 초청하여 강연회를 개최 </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row pt-5 experience-virtuallab">
+                    <div class="col-5">
+                        <h4>동덕여자대학교<span class="font-color">.</span></h4>
+                        <h6>정보통계학과</h6>
+                        <div class="text-box font-regular">
+                            16.03 - 21.02 (졸업)
+                        </div>
+                    </div>
+                    <div class="col-7">
+                        <div class="font-light">
+                            <p>동덕여자대학교에서 정보통계학과를 전공하며, 웹 프로그래밍, 컴퓨터네트워크, 데이터마이닝 등의 과목을 수강하였습니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <hr/>
+            <section id="contact">
+                <h2 class="subtitle">Contact & Channels<span class="font-color">.</span></h2>
+                <div class="row py-5 experience-virtuallab">
+                    <div class="col-6">
+                        <h4>Email<span class="font-color">.</span></h4>
+                        <div class="text-box font-regular">
+                            <a href="mailto:sss_emi@naver.com" target="_blank">sss_emi@naver.com</a>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <h4>Blog<span class="font-color">.</span></h4>
+                        <div class="text-box font-regular">
+                            <a href="https://only-semi.tistory.com/" target="_blank">https://only-semi.tistory.com/</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->

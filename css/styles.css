@@ -91,13 +91,13 @@ body {
 hr {
   margin: 1rem 0;
   color: inherit;
-  background-color: currentColor;
+  background-color: #adb5bd;
   border: 0;
   opacity: 0.25;
 }
 
 hr:not([size]) {
-  height: 1px;
+  height: 0.5px;
 }
 
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
@@ -236,7 +236,7 @@ sup {
 
 a {
   color: #0b7cf7;
-  text-decoration: underline;
+  text-decoration: none;
 }
 a:hover {
   color: #75b2f5;
