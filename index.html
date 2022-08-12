@@ -135,6 +135,21 @@
             .subtitle{
                 font-family: 'Pretendard-SemiBold';
             }
+            .stack-level-description{
+                font-size: 12px;
+                width: fit-content;
+                float: right;
+                padding: 20px 0px;
+            }
+            .level-h{
+                background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #ffe6dc 50%);
+            }
+            .level-m{
+                background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #fff4d2 50%);
+            }
+            .level-l{
+                background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #e9eceffa 50%);
+            }
             @media screen and (max-width: 768px) {
                 .iframe-sm{
                     width: 340px;
@@ -284,21 +299,21 @@
                         <h4>FrontEnd<span class="font-color">.</span></h3>
                         <div class="font-light mt-3">
                             <ul>
-                                <li>HTML / CSS</li>
-                                <li>Javascript</li>
-                                <li>jQuery</li>
-                                <li>Vue.js</li>
-                                <li>Webpack / Babel</li>
-                            </ul>
+                                <li><span class="level-h">HTML / CSS</span></li>
+                                <li><span class="level-h">Javascript</span></li>
+                                <li><span class="level-m">jQuery</span></li>
+                                <li><span class="level-h">Vue.js</span></li>
+                                <li><span class="level-l">Webpack / Babel</span></li>
+                            </ul> 
                         </div>
                     </div>
                     <div class="col-6 col-md-3">
                         <h4>BackEnd<span class="font-color">.</span></h3>
                         <div class="font-light mt-3">
                             <ul>
-                                <li>Node.js</li>
-                                <li>Laravel (PHP)</li>
-                                <li>Python</li>
+                                <li><span class="level-l">Node.js</span></li>
+                                <li><span class="level-h">Laravel (PHP)</span></li>
+                                <li><span class="level-h">Python</span></li>
                             </ul>
                         </div>
                     </div>
@@ -306,9 +321,9 @@
                         <h4>Database<span class="font-color">.</span></h3>
                         <div class="font-light mt-3">
                             <ul>
-                                <li>MongoDB</li>
-                                <li>MySQL</li>
-                                <li>MariaDB</li>
+                                <li><span class="level-m">MongoDB</span></li>
+                                <li><span class="level-m">MySQL</span></li>
+                                <li><span class="level-m">MariaDB</span></li>
                             </ul>
                         </div>
                     </div>
@@ -321,6 +336,14 @@
                                 <li>Figma, XD</li>
                                 <li>Slack, Swit, Jandi</li>
                             </ul>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="stack-level-description">
+                            * 활용정도 <br/>
+                            .<span class="level-h"> 상 - </span>Production 개발 가능 수준. <br/>
+                            .<span class="level-m"> 중 - </span>취미 개발 수준. <br/>
+                            .<span class="level-l"> 하 - </span>기초 수준.
                         </div>
                     </div>
                 </div>
